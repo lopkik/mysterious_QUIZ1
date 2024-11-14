@@ -16,7 +16,9 @@ public class BookDriver {
         originalShallow.getChapters().add(2, "Chapter 3");
         originalShallow.getChapters().add("original misprint");
         System.out.println("Part 2");
+        System.out.println("ORIGINAL");
         System.out.println(originalShallow);
+        System.out.println("COPY");
         System.out.println(shallowCopy);
 
         // Part 3
@@ -30,7 +32,9 @@ public class BookDriver {
 
         originalDeep.getChapters().add("In a Land Faraway");
         System.out.println("Part 3");
+        System.out.println("ORIGINAL");
         System.out.println(originalDeep);
+        System.out.println("COPY");
         System.out.println(deepCopy);
     }
 }
