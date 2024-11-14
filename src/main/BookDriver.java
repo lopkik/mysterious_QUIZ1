@@ -13,7 +13,8 @@ public class BookDriver {
         BookShallowCopy originalShallow = new BookShallowCopy("Shallow", "Shallow Author", originalChapters);
         BookShallowCopy shallowCopy = originalShallow.clone();
 
-        originalChapters.add(2, "Chapter 3");
+        originalShallow.getChapters().add(2, "Chapter 3");
+        originalShallow.getChapters().add("original misprint");
         System.out.println("Part 2");
         System.out.println(originalShallow);
         System.out.println(shallowCopy);
@@ -27,7 +28,7 @@ public class BookDriver {
         BookDeepCopy originalDeep = new BookDeepCopy("Deep", "Deep Author", originalDeepChapters);
         BookDeepCopy deepCopy = originalDeep.clone();
 
-        originalDeepChapters.add("In a Land Faraway");
+        originalDeep.getChapters().add("In a Land Faraway");
         System.out.println("Part 3");
         System.out.println(originalDeep);
         System.out.println(deepCopy);
